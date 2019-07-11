@@ -10,7 +10,8 @@ class App extends Component {
   }
   render() {
     const list = this.state.foods.map((item, i) => {
-      <h1>item</h1>
+      // missing return and {} around item
+      return <h1>{item}</h1>
     })
     return (
       <div className="App">
